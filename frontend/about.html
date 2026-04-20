@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — EpiSight AI</title>
+  <meta name="description" content="Learn about the EpiSight AI disease outbreak prediction system — model details, tech stack, and methodology." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+        </svg>
+      </div>
+      EpiSight AI
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="predict.html">Predict</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="predict.html" class="nav-cta">Start Prediction →</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <div class="about-hero">
+    <div class="section-label">About The Project</div>
+    <h1>AI-Powered<br /><span style="background:linear-gradient(135deg,var(--primary),#7C3AED);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Epidemiology</span><br />at Scale</h1>
+    <p>
+      EpiSight AI leverages Google Community Mobility Reports and distributed machine learning
+      (PySpark + MLlib) to train a Gradient Boosting model that forecasts disease case counts
+      from human movement patterns — making outbreak intelligence accessible through a simple REST API.
+    </p>
+  </div>
+
+  <!-- ─── ABOUT GRID ─── -->
+  <div class="about-grid">
+
+    <!-- Tech Stack -->
+    <div class="about-card animate-in">
+      <div class="about-card-title">
+        <div class="about-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        Technology Stack
+      </div>
+      <ul class="tech-list">
+        <li><div class="tech-pill"><span class="tech-dot" style="background:#E25A1C;"></span>PySpark</div></li>
+        <li><div class="tech-pill"><span class="tech-dot" style="background:#E25A1C;"></span>MLlib</div></li>
+        <li><div class="tech-pill"><span class="tech-dot" style="background:#3776AB;"></span>Scikit-learn</div></li>
+        <li><div class="tech-pill"><span class="tech-dot" style="background:#000000;"></span>Flask</div></li>
+        <li><div class="tech-pill"><span class="tech-dot" style="background:#F7DF1E;"></span>JavaScript</div></li>
+        <li><div class="tech-pill"><span class="tech-dot" style="background:#E34C26;"></span>HTML5</div></li>
+        <li><div class="tech-pill"><span class="tech-dot" style="background:#264DE4;"></span>CSS3</div></li>
+        <li><div class="tech-pill"><span class="tech-dot" style="background:#3776AB;"></span>Python 3</div></li>
+      </ul>
+    </div>
+
+    <!-- Model Details -->
+    <div class="about-card animate-in">
+      <div class="about-card-title">
+        <div class="about-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+          </svg>
+        </div>
+        Model Performance
+      </div>
+
+      <div class="model-metric">
+        <span class="metric-name">Algorithm</span>
+        <span class="metric-val">Gradient Boosting Regressor</span>
+      </div>
+      <div class="model-metric">
+        <span class="metric-name">R² Score</span>
+        <span class="metric-val">≈ 0.60</span>
+      </div>
+      <div class="model-metric">
+        <span class="metric-name">Training Framework</span>
+        <span class="metric-val">PySpark MLlib</span>
+      </div>
+      <div class="model-metric">
+        <span class="metric-name">Inference Layer</span>
+        <span class="metric-val">Scikit-learn (Flask)</span>
+      </div>
+      <div class="model-metric">
+        <span class="metric-name">Input Features</span>
+        <span class="metric-val">4 Mobility Signals</span>
+      </div>
+      <div class="model-metric">
+        <span class="metric-name">Output</span>
+        <span class="metric-val">Predicted Case Count</span>
+      </div>
+    </div>
+
+    <!-- Data Source -->
+    <div class="about-card animate-in">
+      <div class="about-card-title">
+        <div class="about-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+          </svg>
+        </div>
+        Data Sources
+      </div>
+      <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin-bottom:16px;font-weight:300;">
+        Training data is sourced from <strong style="color:var(--text-primary);font-weight:600;">Google Community Mobility Reports</strong> —
+        anonymised, aggregated datasets that capture mobility trends across categories relative to a pre-pandemic baseline.
+      </p>
+      <div class="model-metric">
+        <span class="metric-name">Retail &amp; Recreation</span>
+        <span class="metric-val">✓ Used</span>
+      </div>
+      <div class="model-metric">
+        <span class="metric-name">Workplaces</span>
+        <span class="metric-val">✓ Used</span>
+      </div>
+      <div class="model-metric">
+        <span class="metric-name">Residential</span>
+        <span class="metric-val">✓ Used</span>
+      </div>
+      <div class="model-metric">
+        <span class="metric-name">Case Growth Rate</span>
+        <span class="metric-val">✓ Computed</span>
+      </div>
+    </div>
+
+    <!-- API Contract -->
+    <div class="about-card animate-in">
+      <div class="about-card-title">
+        <div class="about-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <polyline points="16 18 22 12 16 6"/>
+            <polyline points="8 6 2 12 8 18"/>
+          </svg>
+        </div>
+        REST API Contract
+      </div>
+      <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:12px;font-weight:500;">POST &nbsp;<code style="background:var(--bg);padding:2px 8px;border-radius:6px;color:var(--primary);font-size:0.8rem;">http://127.0.0.1:5000/predict</code></p>
+
+      <p style="font-size:0.78rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;">Request Body</p>
+      <pre style="background:var(--secondary);color:#E2E8F0;padding:14px 16px;border-radius:10px;font-size:0.78rem;overflow-x:auto;line-height:1.6;margin-bottom:16px;">{
+  "growth_rate":  1.25,
+  "retail":      -30,
+  "workplaces":  -45,
+  "residential":  18
+}</pre>
+
+      <p style="font-size:0.78rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;">Response</p>
+      <pre style="background:var(--secondary);color:#E2E8F0;padding:14px 16px;border-radius:10px;font-size:0.78rem;line-height:1.6;">{
+  "prediction": 47823
+}</pre>
+    </div>
+
+  </div>
+
+  <!-- ─── PIPELINE ─── -->
+  <div class="about-wide-card">
+    <div style="margin-bottom:28px;">
+      <div class="section-label">Architecture</div>
+      <h2 class="section-title">Data Pipeline</h2>
+    </div>
+    <div class="pipeline-steps animate-in">
+      <div class="pipeline-step">
+        <div class="pipeline-num">STEP 01</div>
+        <div class="pipeline-name">Data Ingestion</div>
+        <div class="pipeline-sub">Google Mobility CSV</div>
+      </div>
+      <div class="pipeline-step">
+        <div class="pipeline-num">STEP 02</div>
+        <div class="pipeline-name">Preprocessing</div>
+        <div class="pipeline-sub">PySpark DataFrames</div>
+      </div>
+      <div class="pipeline-step">
+        <div class="pipeline-num">STEP 03</div>
+        <div class="pipeline-name">Feature Engineering</div>
+        <div class="pipeline-sub">Growth Rate + Mobility</div>
+      </div>
+      <div class="pipeline-step">
+        <div class="pipeline-num">STEP 04</div>
+        <div class="pipeline-name">Model Training</div>
+        <div class="pipeline-sub">MLlib + Scikit-learn</div>
+      </div>
+      <div class="pipeline-step">
+        <div class="pipeline-num">STEP 05</div>
+        <div class="pipeline-name">API Serving</div>
+        <div class="pipeline-sub">Flask REST Endpoint</div>
+      </div>
+    </div>
+
+    <!-- Risk legend -->
+    <div style="margin-top:40px;display:flex;gap:16px;flex-wrap:wrap;">
+      <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:700;width:100%;letter-spacing:-0.3px;margin-bottom:4px;">Risk Classification Logic</h3>
+      <div style="display:flex;align-items:center;gap:10px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:14px 20px;flex:1;min-width:180px;">
+        <span class="risk-badge risk-low" style="margin:0;"><span class="risk-dot"></span>Low</span>
+        <span style="font-size:0.85rem;color:var(--text-secondary);">Prediction &lt; 10,000 cases</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:14px 20px;flex:1;min-width:180px;">
+        <span class="risk-badge risk-medium" style="margin:0;"><span class="risk-dot"></span>Medium</span>
+        <span style="font-size:0.85rem;color:var(--text-secondary);">Prediction &lt; 100,000 cases</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:14px 20px;flex:1;min-width:180px;">
+        <span class="risk-badge risk-high" style="margin:0;"><span class="risk-dot"></span>High</span>
+        <span style="font-size:0.85rem;color:var(--text-secondary);">Prediction ≥ 100,000 cases</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">
+        <svg width="16" height="16" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+        </svg>
+        EpiSight AI
+      </a>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="predict.html">Predict</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <p class="footer-copy">© 2025 EpiSight AI — AI Disease Outbreak Prediction System</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

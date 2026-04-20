@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EpiSight AI — Disease Outbreak Prediction</title>
+  <meta name="description" content="Predict disease outbreak trends using AI-powered mobility data analysis and gradient boosting machine learning models." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+        </svg>
+      </div>
+      EpiSight AI
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="predict.html">Predict</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="predict.html" class="nav-cta">Start Prediction →</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        AI-Powered Epidemiology
+      </div>
+
+      <h1>Predict Disease<br /><span>Outbreak Trends</span><br />Using AI</h1>
+
+      <p class="hero-subtitle">
+        Harness real-world mobility patterns and gradient boosting machine learning
+        to forecast disease case counts before they become crises.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="predict.html" class="btn-primary">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+          Start Prediction
+        </a>
+        <a href="about.html" class="btn-secondary">
+          Learn More
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-value" data-target="60" data-prefix="R²≈" data-suffix="%">R²≈0%</div>
+          <div class="stat-label">Model Accuracy</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-value" data-target="4">0</div>
+          <div class="stat-label">Input Features</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-value" data-target="3">0</div>
+          <div class="stat-label">Risk Levels</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-value" data-target="100" data-suffix="ms">0ms</div>
+          <div class="stat-label">Inference Time</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURES ─── -->
+  <section class="section features-section">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div class="section-header" style="text-align:center;">
+        <div class="section-label" style="justify-content:center;">
+          Core Capabilities
+        </div>
+        <h2 class="section-title" style="margin:0 auto 14px;">Why EpiSight AI?</h2>
+        <p class="section-subtitle" style="margin:0 auto; text-align:center;">
+          Built on peer-reviewed epidemiological research and production-grade ML infrastructure.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Card 1 -->
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Real-Time Prediction</h3>
+          <p class="feature-desc">
+            Submit mobility data and receive predicted case counts in under 100 ms via our Flask REST API — no waiting, no batch queues.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Mobility Data Analysis</h3>
+          <p class="feature-desc">
+            Uses Google Community Mobility Reports — retail, workplace, and residential trends — as predictive signals for disease spread.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="feature-card animate-in">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Machine Learning Powered</h3>
+          <p class="feature-desc">
+            Gradient Boosting Regressor trained with Scikit-learn on Apache Spark — delivering R² ≈ 0.60 predictive performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── HOW IT WORKS ─── -->
+  <section class="section">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div class="section-header" style="text-align:center;">
+        <div class="section-label" style="justify-content:center;">Process</div>
+        <h2 class="section-title" style="margin:0 auto 14px;">How It Works</h2>
+        <p class="section-subtitle" style="margin:0 auto; text-align:center;">
+          Four simple steps from raw mobility data to actionable outbreak intelligence.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-item animate-in">
+          <div class="step-number">01</div>
+          <div class="step-title">Input Data</div>
+          <p class="step-desc">Enter growth rate and mobility indicators for the target region.</p>
+        </div>
+        <div class="step-item animate-in">
+          <div class="step-number">02</div>
+          <div class="step-title">API Request</div>
+          <p class="step-desc">JS sends a POST request to the Flask /predict endpoint.</p>
+        </div>
+        <div class="step-item animate-in">
+          <div class="step-number">03</div>
+          <div class="step-title">ML Inference</div>
+          <p class="step-desc">Gradient Boosting model runs inference on the input vector.</p>
+        </div>
+        <div class="step-item animate-in">
+          <div class="step-number">04</div>
+          <div class="step-title">Risk Report</div>
+          <p class="step-desc">Predicted case count and risk level are returned instantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">
+        <svg width="16" height="16" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+        </svg>
+        EpiSight AI
+      </a>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="predict.html">Predict</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <p class="footer-copy">© 2025 EpiSight AI — AI Disease Outbreak Prediction System</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
